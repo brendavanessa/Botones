@@ -2,10 +2,10 @@
 $(document).ready(function(e) {
     document.addEventListener("deviceready",function(){
 		$('#beep').tap(function(){
-			navigator.notification.beep(1);
+			navigator.beep(1000);
 		});
 		$('#vibrar').tap(function(){
-			navigator.notification.vibrate(1000);
+			navigator.vibrate(1000);
 		});
 	},false);
 });
